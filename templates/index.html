@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Bootstrap Icon Picker</title>
+{% endblock  %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <h2>Mr. M.'s  Select TB icons with search.</h2>
+            <p>
+            <a href="http://getbootstrap.com/components/#glyphicons" target="_blank">Reference Twitter Bootstrap Documentation</a>
+            </p>
+        </div>
+    </div>
+
+    <div id="wraper">
+            <form method="post">
+        <input type="text" name="someName" class="icon-picker" placeholder="Click on icon and then search    ❱ " />
+    </form>
+        
+    <hr>    
+
+    <h3>How to change color of icons</h3>
+    With CSS you can change the color of icons.
+
+
+    <style>
+    .blue, .blue a {
+    color: #00f;
+    }
+    </style>
+
+    <span class="glyphicon glyphicon-search blue"></span>
+
+    </div> <!-- wraper -->
+{% endblock  %}
